@@ -1,0 +1,61 @@
+Berkeley DB (que nous nommerons BDB) fait partie de la famille des bases de données « clé-valeur » et est sans doute le produit de cette famille le plus utilisé au monde avec plusieurs dizaines de millions de déploiements revendiqués par l'éditeur. La première version de BDB remonte à 1986 et est la propriété d'Oracle depuis février 2006. 
+
+
++ La famille de Berkeley DB
+
+A. Oracle BDB Core
+Cette version de Berkeley DB est écrite en C ANSI et peut être utilisée comme une bibliothèque pour accéder aux données persistées. Oracle BDB fournit de nombreuses interfaces pour différents langages de programmation (C, Perl, PHP, Python…).
+
+B. Oracle BDB XML Edition
+Cette version est une surcouche de BDB. Cette version XML permet de stocker et récupérer facilement des documents XML. L'utilisation de XQuery permet d'accéder aux documents XML stockés.
+
+C. BDB Java Edition
+Cette version de Berkeley DB, 100 % Java est une base embarquée adoptant le format de stockage clé-valeur. De plus, BDB JE est très performante et flexible. Cette base supporte les transactions, permet de stocker des objets Java en utilisant seulement quelques annotations.
+
+
+
++ Les fonctionnalités-clés
+
+Chaque membre de la famille BDB possède différentes fonctionnalités. Dans toutes les familles de BDB, nous pouvons remarquer les fonctionnalités suivantes.
+Data Store (DS):  	1 Writer et n reader
+Concurrent Data Store (CDS): 	n writers et n snapshot reader
+Transactional Data Store (TD): 	Full ACID support on top of CDS
+High Availability (HA): 	Replication for fault tolerence. Fail over recovery support
+
+
++ Les fonctionnalités additionnelles:
+
+Vous trouverez les fonctionnalités qui rendent BDB unique !
+
+-Locking: 	Haute concurrence
+-Données stockées dans le format natif de l'application: 	Performance et pas de conversion nécessaire
+-API et pas de SQL: 	Performances et flexibilité et contrôle
+-In Process et pas de client/serveur: 	Performances et pas d'IPC nécessaire
+-Zéro administration: 	Coût de possession faible
+-Transactions ACID et récupération: 	Fiabilité et données intègres
+-Dual licences: 	Open/Close source distributions
+-En mémoire ou sur disque: 	Transacted caching/Persisted data store
+-Similar data access API: 	Facilité de passer de BDB à BDB JE
+-Faible dépendance vers des bibliothèques tierces: 	Facile à déployer et à utiliser
+-Bases de données de grandes capacités: 	Virtuellement pas de limite de base de données
+
+Et pour ce qui est BDB Java Edition, vous trouverez ses propres fonctionnalités dans le tableau ci-dessous :
+
+-Fast, Indexed, B-Tree: 	Récupération des données très rapide
+-Java JEE JTA et JCA Support: 	Intégration avec les serveurs d'applications Java EE
+-Efficient Direct Persistence Layer: 	Utilisation d'annotations pour stocker les graphes d'objets Java
+-Easy Java Collections API: 	Manipulation transactionnelle des API de base au travers de Collections Java améliorées
+-Low Level Base API: 	Travailler avec des schémas de données dynamiques
+-JMX Support: 	Possibilité de monitoring
+
+
+
++ Installation:
+
+
+Tout d'abord, débutons par le commencement. Pour pouvoir utiliser BDB Java Edition, vous devez l'installer à l'adresse suivante : http://www.oracle.com/technetwork/products/berkeleydb/downloads/index.html.
+L'installation de Berkeley DB est assez simple, il suffit de décompresser l'archive.
+
+
+
+
