@@ -7,8 +7,9 @@ package Basic;
 
 /**
  *
- * @author lenovo
+ * @author ebouhanna
  */
+
 import java.io.Serializable;
 
 public class PartKey implements Serializable
