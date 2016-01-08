@@ -3,14 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/ShipmentKey.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/PartKey.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/DB/SampleDatabase.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/SupplierData.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/PartData.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/Weight.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/SupplierKey.java</file>
-            <file>file:/C:/Users/lenovo/Documents/NetBeansProjects/tutorialOBDBJE/src/Basic/ShipmentData.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/ProduitKey.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/SampleViews.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/ProduitData.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/MainProgram/Sample.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/FournisseurKey.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/VentesKey.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/FournisseurData.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/Bd.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/VentesData.java</file>
+            <file>file:/C:/git_test/tutorialOBDBJE/tutorialOBDBJE/src/Basic/Poids.java</file>
         </group>
     </open-files>
 </project-private>

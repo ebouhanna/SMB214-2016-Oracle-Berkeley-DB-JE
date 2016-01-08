@@ -10,15 +10,15 @@ package MainProgram;
  * @author ebouhanna
  */
 
-import Basic.SampleDatabase;
+import Basic.Bd;
 import Basic.SampleViews;
-import Basic.PartData;
-import Basic.PartKey;
-import Basic.ShipmentData;
-import Basic.ShipmentKey;
-import Basic.SupplierData;
-import Basic.SupplierKey;
-import Basic.Weight;
+import Basic.ProduitData;
+import Basic.ProduitKey;
+import Basic.VentesData;
+import Basic.VentesKey;
+import Basic.FournisseurData;
+import Basic.FournisseurKey;
+import Basic.Poids;
 import com.sleepycat.je.DatabaseException;
 import java.io.FileNotFoundException;
 import com.sleepycat.collections.TransactionRunner;
@@ -29,7 +29,7 @@ import java.util.Iterator;
 
 public class Sample {
     
-    private SampleDatabase db;
+    private Bd db;
     private SampleViews views;
 
     public static void main(String[] args)
@@ -83,7 +83,7 @@ public class Sample {
 
     private Sample(String homeDir) throws DatabaseException, FileNotFoundException
     {
-        db = new SampleDatabase(homeDir);
+        db = new Bd(homeDir);
         views = new SampleViews(db);
     }
 
@@ -131,16 +131,16 @@ public class Sample {
         if (suppliers.isEmpty())
         {
             System.out.println("Adding Suppliers");
-            suppliers.put(new SupplierKey("S1"),
-                          new SupplierData("Smith", 20, "London"));
-            suppliers.put(new SupplierKey("S2"),
-                          new SupplierData("Jones", 10, "Paris"));
-            suppliers.put(new SupplierKey("S3"),
-                          new SupplierData("Blake", 30, "Paris"));
-            suppliers.put(new SupplierKey("S4"),
-                          new SupplierData("Clark", 20, "London"));
-            suppliers.put(new SupplierKey("S5"),
-                          new SupplierData("Adams", 30, "Athens"));
+            suppliers.put(new FournisseurKey("S1"),
+                          new FournisseurData("Smith", 20, "London"));
+            suppliers.put(new FournisseurKey("S2"),
+                          new FournisseurData("Jones", 10, "Paris"));
+            suppliers.put(new FournisseurKey("S3"),
+                          new FournisseurData("Blake", 30, "Paris"));
+            suppliers.put(new FournisseurKey("S4"),
+                          new FournisseurData("Clark", 20, "London"));
+            suppliers.put(new FournisseurKey("S5"),
+                          new FournisseurData("Adams", 30, "Athens"));
         }
     }
 
@@ -150,29 +150,29 @@ public class Sample {
         if (parts.isEmpty())
         {
             System.out.println("Adding Parts");
-            parts.put(new PartKey("P1"),
-                      new PartData("Nut", "Red",
-                                    new Weight(12.0, Weight.GRAMS),
+            parts.put(new ProduitKey("P1"),
+                      new ProduitData("Nut", "Red",
+                                    new Poids(12.0, Poids.GRAMMES),
                                     "London"));
-            parts.put(new PartKey("P2"),
-                      new PartData("Bolt", "Green",
-                                    new Weight(17.0, Weight.GRAMS),
+            parts.put(new ProduitKey("P2"),
+                      new ProduitData("Bolt", "Green",
+                                    new Poids(17.0, Poids.GRAMMES),
                                     "Paris"));
-            parts.put(new PartKey("P3"),
-                      new PartData("Screw", "Blue",
-                                    new Weight(17.0, Weight.GRAMS),
+            parts.put(new ProduitKey("P3"),
+                      new ProduitData("Screw", "Blue",
+                                    new Poids(17.0, Poids.GRAMMES),
                                     "Rome"));
-            parts.put(new PartKey("P4"),
-                      new PartData("Screw", "Red",
-                                    new Weight(14.0, Weight.GRAMS),
+            parts.put(new ProduitKey("P4"),
+                      new ProduitData("Screw", "Red",
+                                    new Poids(14.0, Poids.GRAMMES),
                                     "London"));
-            parts.put(new PartKey("P5"),
-                      new PartData("Cam", "Blue",
-                                    new Weight(12.0, Weight.GRAMS),
+            parts.put(new ProduitKey("P5"),
+                      new ProduitData("Cam", "Blue",
+                                    new Poids(12.0, Poids.GRAMMES),
                                     "Paris"));
-            parts.put(new PartKey("P6"),
-                      new PartData("Cog", "Red",
-                                    new Weight(19.0, Weight.GRAMS),
+            parts.put(new ProduitKey("P6"),
+                      new ProduitData("Cog", "Red",
+                                    new Poids(19.0, Poids.GRAMMES),
                                     "London"));
         }
     }
@@ -183,30 +183,30 @@ public class Sample {
         if (shipments.isEmpty())
         {
             System.out.println("Adding Shipments");
-            shipments.put(new ShipmentKey("P1", "S1"),
-                          new ShipmentData(300));
-            shipments.put(new ShipmentKey("P2", "S1"),
-                          new ShipmentData(200));
-            shipments.put(new ShipmentKey("P3", "S1"),
-                          new ShipmentData(400));
-            shipments.put(new ShipmentKey("P4", "S1"),
-                          new ShipmentData(200));
-            shipments.put(new ShipmentKey("P5", "S1"),
-                          new ShipmentData(100));
-            shipments.put(new ShipmentKey("P6", "S1"),
-                          new ShipmentData(100));
-            shipments.put(new ShipmentKey("P1", "S2"),
-                          new ShipmentData(300));
-            shipments.put(new ShipmentKey("P2", "S2"),
-                          new ShipmentData(400));
-            shipments.put(new ShipmentKey("P2", "S3"),
-                          new ShipmentData(200));
-            shipments.put(new ShipmentKey("P2", "S4"),
-                          new ShipmentData(200));
-            shipments.put(new ShipmentKey("P4", "S4"),
-                          new ShipmentData(300));
-            shipments.put(new ShipmentKey("P5", "S4"),
-                          new ShipmentData(400));
+            shipments.put(new VentesKey("P1", "S1"),
+                          new VentesData(300));
+            shipments.put(new VentesKey("P2", "S1"),
+                          new VentesData(200));
+            shipments.put(new VentesKey("P3", "S1"),
+                          new VentesData(400));
+            shipments.put(new VentesKey("P4", "S1"),
+                          new VentesData(200));
+            shipments.put(new VentesKey("P5", "S1"),
+                          new VentesData(100));
+            shipments.put(new VentesKey("P6", "S1"),
+                          new VentesData(100));
+            shipments.put(new VentesKey("P1", "S2"),
+                          new VentesData(300));
+            shipments.put(new VentesKey("P2", "S2"),
+                          new VentesData(400));
+            shipments.put(new VentesKey("P2", "S3"),
+                          new VentesData(200));
+            shipments.put(new VentesKey("P2", "S4"),
+                          new VentesData(200));
+            shipments.put(new VentesKey("P4", "S4"),
+                          new VentesData(300));
+            shipments.put(new VentesKey("P5", "S4"),
+                          new VentesData(400));
         }
     }
 

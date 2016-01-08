@@ -9,7 +9,6 @@ package Basic;
  *
  * @author ebouhanna
  */
-import Basic.SampleDatabase;
 import com.sleepycat.bind.EntryBinding;
 import com.sleepycat.bind.serial.ClassCatalog;
 import com.sleepycat.bind.serial.SerialBinding;
@@ -25,24 +24,24 @@ public class SampleViews {
     
     
     
-    public SampleViews(SampleDatabase db)
+    public SampleViews(Bd bd)
     {
-        ClassCatalog catalog = db.getClassCatalog();
-        EntryBinding partKeyBinding =  new SerialBinding(catalog, PartKey.class);
-        EntryBinding partDataBinding = new SerialBinding(catalog, PartData.class);
-        EntryBinding supplierKeyBinding = new SerialBinding(catalog, SupplierKey.class);
-        EntryBinding supplierDataBinding = new SerialBinding(catalog, SupplierData.class);
-        EntryBinding shipmentKeyBinding = new SerialBinding(catalog, ShipmentKey.class);
-        EntryBinding shipmentDataBinding = new SerialBinding(catalog, ShipmentData.class);
+        ClassCatalog catalog = bd.getClassCatalog();
+        EntryBinding partKeyBinding =  new SerialBinding(catalog, ProduitKey.class);
+        EntryBinding partDataBinding = new SerialBinding(catalog, ProduitData.class);
+        EntryBinding supplierKeyBinding = new SerialBinding(catalog, FournisseurKey.class);
+        EntryBinding supplierDataBinding = new SerialBinding(catalog, FournisseurData.class);
+        EntryBinding shipmentKeyBinding = new SerialBinding(catalog, VentesKey.class);
+        EntryBinding shipmentDataBinding = new SerialBinding(catalog, VentesData.class);
     
         partMap =
-            new StoredSortedMap(db.getPartDatabase(),
+            new StoredSortedMap(bd.getBdProduit(),
                           partKeyBinding, partDataBinding, true);
         supplierMap =
-            new StoredSortedMap(db.getSupplierDatabase(),
+            new StoredSortedMap(bd.getBdFournisseur(),
                           supplierKeyBinding, partDataBinding, true);
         shipmentMap =
-            new StoredSortedMap(db.getShipmentDatabase(),
+            new StoredSortedMap(bd.getBdVentes(),
                           shipmentKeyBinding, partDataBinding, true);
     
     }    
