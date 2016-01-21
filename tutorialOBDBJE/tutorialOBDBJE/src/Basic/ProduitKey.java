@@ -8,7 +8,7 @@ package Basic;
 /**
  *
  * @author ebouhanna
- * Class oour definir l'Objet clé de chaque produit qui sera insérer dans la BD 
+ * Class pour definir l'Objet clé de chaque produit qui sera insérer dans la BD 
  */
 
 import java.io.Serializable;
