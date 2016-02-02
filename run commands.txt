@@ -1,0 +1,5 @@
+java -cp C:\Users\lenovo\Documents\NetBeansProjects\tutorialOBDBJE\src\ MainProgram.Sample 
+
+javac -cp C:\Users\lenovo\Documents\NetBeansProjects\tutorialOBDBJE\src\ C:\Users\lenovo\Documents\NetBeansProjects\tutorialOBDBJE\src\MainProgram\Sample.java
+
+javac -cp C:\Users\lenovo\Documents\NetBeansProjects\tutorialOBDBJE\src\ C:\Users\lenovo\Documents\NetBeansProjects\tutorialOBDBJE\src\Basic\*.java
