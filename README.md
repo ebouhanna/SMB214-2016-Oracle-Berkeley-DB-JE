@@ -1,27 +1,42 @@
 # SMB214-2016-Oracle-Berkeley-DB-JE
-ISSAE CNAM Liban SMB214-2016 projet préparé par Elie Bou Hanna
+ISSAE CNAM Liban SMB214-2016 projet préparé par Elias Pierre Bou Hanna (68 Bek)
+
+Berkeley DB (BDB) fait partie de la famille des bases de données « clé-valeur » et est sans doute le produit de cette famille le plus utilisé au monde avec plusieurs dizaines de millions de déploiement. 
 
 
 Plan du Projet Oracle Berkeley Database Java Edition:
 
-+ Introduction a Berkeley DB:
-    -C'est Quoi Berkley DB.
-    -Aquisition par Oracle.
-    -Architecture Cle/Valeur.
-    -B-Tree et H-Tree architecture.
+- Introduction, Qu’est ce qu'un SGBD ?
 
-+ Installation de Oracle Berkeley DB JE.
+- Berkeley DB Histoire et actualités.
 
-+ Fixations et formats des tuples.
+- NoSQL el les Bases de données clé/valeur.
 
-+ Environment de la Base de donnees.
+- Outils Berkeley DB.
 
-+ Stockage des enregistrements qui contiennent clé/valeur dans la BD.
+- Utilisation de Berkeley DB.
 
-+ Indices dans la BD contenant les cles secondaires.
+- Famille Berkeley DB.
 
-+ Transactions utilises pour "commit ou undo" des changement dans la DB.
+- Fonctionnalités des distribution de Berkeley DB.
 
-+ Tutorial et exemples.
+- Comparaison et fonctionnalités des membres de la famille Berkeley DB.
 
-+ Oracle Berkely DB JE sauvegarde/restauration et optimisation.
+- Méthodes d’accés et gestion des données / Quelques propriétés de BDB.
+
+- Berkeley DB Java Edition 
+
+- Installation
+
+- Description de l’environnement.
+
+- Caractéristiques et Fonctionnalités de Berkeley DB JE.
+
+- API Disponibles.
+
+- Quel API faut il utilisé ?
+
+- Démonstration.
+
+- Conclusion.
+
