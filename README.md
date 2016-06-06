@@ -1,6 +1,8 @@
 # SMB214-2016-Oracle-Berkeley-DB-JE
 ISSAE CNAM Liban SMB214-2016 projet préparé par Elias Pierre Bou Hanna (68 Bek)
  ![My Photo](https://github.com/ebouhanna/SMB214-2016-Oracle-Berkeley-DB-JE/blob/master/Elias%20Bou%20Hanna.jpg)
+ 
+ Lien de la Presentation : https://github.com/ebouhanna/SMB214-2016-Oracle-Berkeley-DB-JE/blob/master/Presentation%20Oracle%20Berkeley%20DB%20SMB214%20010216.pptx
 
 Berkeley DB (BDB) fait partie de la famille des bases de données « clé-valeur » et est sans doute le produit de cette famille le plus utilisé au monde avec plusieurs dizaines de millions de déploiement. 
 
